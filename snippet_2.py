@@ -1,9 +1,6 @@
 def is_valid_parenthesis(s):
     parntehisis = {
-        '(': ')',
-          "{": "}",
-         '[': ']'
-    }
+        '(': ')','{': '}','[': ']' }
     stack = []
     for element in s:
         if element in dc.keys(): stack.append(i)
