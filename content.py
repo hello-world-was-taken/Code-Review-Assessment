@@ -3,7 +3,7 @@ def is_valid_parenthesis(s):
         '(': ')','{': '}','[': ']' }
     stack = []
     for element in s:
-        if element in dc.keys(): stack.append(i)
+        if element in parntehisis.keys(): stack.append(i)
         else:
             if len(stack) == 0:
                 return False
