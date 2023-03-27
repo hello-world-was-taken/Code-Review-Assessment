@@ -1,6 +1,6 @@
 count = 0
 
-def abc(x, y):
+def multiply(x, y):
     return x * y
 
 def increment_count():
