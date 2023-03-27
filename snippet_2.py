@@ -1,20 +1,19 @@
 def is_valid_parenthesis(s):
-    dc = {
+    parntehisis = {
         '(': ')',
           "{": "}",
          '[': ']'
-
     }
     stack = []
-    for i in s:
-        if i in dc.keys(): stack.append(i)
+    for element in s:
+        if element in dc.keys(): stack.append(i)
         else:
             if len(stack) == 0:
                 return False
             
 
-            op = stack.pop()
-            if dc[op] != i:
+            poped = stack.pop()
+            if parntehisis[poped] != element:
                 return False
     if len(stack) != 0:
         return False
