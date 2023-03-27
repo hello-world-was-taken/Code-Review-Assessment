@@ -1,3 +1,11 @@
+def calculateArea(radius):
+    if radius < 0:
+        return 3.14 * (-1*radius)**2
+    return 3.14 * radius ** 2
+
+def divide_numbers(a, b):
+    return a / b
+
 def get_square(numbers):
     square = []
     for number in numbers:
@@ -25,3 +33,4 @@ def increment_count():
 
 increment_count()
 print(count)
+
